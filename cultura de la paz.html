@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODIGO HUMANO: Programando Rutas de Paz para mi Bienestar Integral</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#0a2e0a;color:white;text-align:center;padding-bottom:95px}
+.pantalla{display:none;padding:25px 18px;animation:entrar .4s ease}
+.pantalla.activa{display:block}
+@keyframes entrar{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.logo{font-size:70px;animation:flotar 3s infinite}
+@keyframes flotar{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+h1{font-size:48px;color:#7CFF6B;line-height:1;text-shadow:0 0 20px #4ade80}
+h2{color:#7CFF6B;font-size:32px}
+.sub{color:#4ade80;font-weight:bold;margin:12px 0}
+.subtitulo{color:#C6FF4D;font-size:18px;margin:8px 0 18px;font-weight:bold}
+p{font-size:16px;line-height:1.6;max-width:520px;margin:10px auto}
+.btn{background:#7CFF6B;color:#021a02;border:none;padding:13px 25px;border-radius:20px;font-weight:bold;font-size:16px;cursor:pointer;margin-top:14px}
+.tarjeta{background:#0f3d0f;border:1px solid #4ade80;border-radius:20px;padding:20px;max-width:550px;margin:14px auto;text-align:left}
+.tarjeta h3{color:#C6FF4D;font-size:22px;text-align:center;margin-bottom:8px}
+.tarjeta p{color:white}
+.paso{background:#123f12;border:1px solid #4ade80;border-radius:16px;padding:14px;margin:10px auto;max-width:520px;cursor:pointer;text-align:left}
+.paso b{color:#C6FF4D}
+.detalle{display:none;margin-top:7px;color:#d9ffd9}
+.flecha{text-align:center;font-size:22px;color:#4ade80}
+.muro{background:linear-gradient(135deg,#7CFF6B,#4ade80);color:#021a02;border-radius:18px;padding:15px;margin:10px auto;max-width:520px}
+.muro p{font-weight:bold;color:#021a02}
+.muro span{font-size:13px;font-weight:bold}
+.aviso{background:#fff3cd;color:#333;border-radius:14px;padding:13px;max-width:520px;margin:12px auto;font-size:13px}
+/* BOTONES ABAJO AL ULTIMO */
+.menu{background:#021a02;padding:12px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;border-top:2px solid #4ade80;position:fixed;bottom:0;left:0;right:0;z-index:100}
+.menu button{background:#123f12;color:white;border:1px solid #4ade80;padding:10px 15px;border-radius:20px;font-weight:bold;cursor:pointer;font-size:14px}
+.menu button.activo{background:#7CFF6B;color:#021a02;transform:scale(1.08)}
+footer{padding:18px;color:#4ade80;background:#021a02;font-size:13px}
+</style>
+</head>
+<body>
+
+<!-- INICIO - PRIMERO EL TITULO -->
+<div id="inicio" class="pantalla activa">
+<div class="logo">🍃🌍</div>
+<h1>CODIGO HUMANO: Programando rutas de paz para mi Bienestar Integral</h1>
+ <div class="sub">PAEC - CULTURA DE LA PAZ Dimension Emocional- 3Er SEMESTRE</div>
+<p>Programando rutas de paz para la convivencia sana dentro del CECyTE 24.</p>
+<div class="tarjeta"><p style="text-align:center">Mi plataforma se diseña para <b>informar y sensibilizar</b> a mi comunidad del CECyTE 24, <b>no para diagnosticar ni señalar a nadie.</b><br><br><b>Juntos Construimos: Colabora para Crecer</b></p></div>
+<button class="btn" onclick="cambiar('apertura')">Comenzar mi ruta ↓</button>
+</div>
+
+
+<div id="apertura" class="pantalla">
+<h2>1. Apertura</h2><div class="subtitulo">Situaciones que afecta la cultura de la paz en la dimension emocional "Identificaremos nuestra realidad"</div>
+ <div class="tarjeta">
+  <h2>¿Qué son las emociones?</h2>
+  <p>Son reacciones que sentimos cuando pasa algo. Nos dicen cómo estamos y qué necesitamos. No se controlan, se sienten y nos ayudan a conocernos y a convivir mejor.</p>
+</div>
+<div class="tarjeta"><h3>¿Qué es la cultura de la paz?</h3><p>Es el conjunto de valores, actitudes y acciones que promueven el respeto, la empatía, el diálogo, la igualdad, la cooperación y la solución pacífica de los conflictos para convivir sin violencia.</p></div>
+<div class="tarjeta"><h3>🛡️ Información preventiva</h3><p>Toca cada una para ver cómo prevenirla:</p></div>
+<div class="paso" onclick="mostrar(this)"><b>1.Prevención de burlas y agreciones</b> <div class="detalle">Las burlas y agresiones afectan la dimensión emocional porque dañan cómo nos sentimos y cómo nos relacionamos con los demás.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>2.Trabajo en equipo no funcional</b><div class="detalle">- Respeto:escucho a todos sin burlarme.
+- Diálogo:si hay un problema, lo hablamos con calma, no nos peleamos.
+- Empatía:si un compañero no entiende, lo ayudo en vez de enojarme.
+- Solidaridad:nos repartimos el trabajo y todos cumplimos.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>3.Ayudar a estudiantes con difucultades de expresion</b><div class="detalle">1. Encontrar las dificultades de expresión.
+2. Escuchar sin interrumpir.
+3. Trabajar en equipos pequeños.
+4. Platicar con dinámicas de paz.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>4.Resolver un conflicto</b> <div class="detalle">Tranquilízate.
+Escucha sin interrumpir
+ Expresa diciendo cómo te sientes.
+Identifica cuál es el conflicto
+Busca soluciones al conflicto.
+Acuerdos:Elijan la mejor para los dos. Cumple y Revisa: Haz lo acordado y revisa cómo salió.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>5. Respeta las opiniones de los demas</b><div class="detalle">Cuando no respetan lo que piensas, te interrumpen o se burlan, te sientes triste, enojado o con miedo a participar.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>6. Falta de comunicación y bullyng</b><div class="detalle">Afectan cómo nos sentimos, causan miedo, tristeza, malentendidos y peleas.</div></div>
+<div class="tarjeta"><h3>📍 En el CECyTE 24 pasa que...</h3><p>• Desacuerdos al trabajar en equipo<br>• Bromas pesadas sobre docentes y alumnos.<br>• Compañeros a quienes se deja fuera en el recreo o en actividades<br>• Malentendidos en los chats del grupo<br>• Falta de comunicación entre estudiantes</p></div>
+<button class="btn" onclick="cambiar('desarrollo')">Ir a Desarrollo →</button>
+</div>
+
+<!-- 2 DESARROLLO -->
+<div id="desarrollo" class="pantalla">
+<h2>2. Desarrollo</h2><div class="subtitulo">"Programando nuestra  ruta de paz"</div>
+<div class="tarjeta"><h3>Mi código de paz - 7 acciones</h3><p style="text-align:center">Valores, principios y acciones que nos ayudan a construir una convivencia sana.</p></div>
+<div class="paso" onclick="mostrar(this)"><b>01. Me detengo</b><p>Respiro y pienso antes de reaccionar.</p><div class="detalle">✨ Ejemplo: Si me enojo, pensar bien antes de hablar.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>02. Pienso</b><p>Pienso qué pasó y cómo me siento.</p><div class="detalle">✨ Ejemplo: ¿Qué me molestó realmente?</div></div>
+<div class="paso" onclick="mostrar(this)"><b>03. Escucho / Dialogo</b><p>Escucho sin interrumpir y con respeto.</p><div class="detalle">✨ Ejemplo: Dejo que mi compañero termine de hablar.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>04. Expreso cómo me siento</b><p>Digo lo que siento sin ofender.</p><div class="detalle">✨ Ejemplo: "Me sentí mal cuando..."</div></div>
+<div class="paso" onclick="mostrar(this)"><b>05. Busco soluciones</b><p>Propongo alternativas que beneficien a todos.</p><div class="detalle">✨ Ejemplo: Buscamos ganar y tener buena convivencia para no pelear.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>06. Establezco acuerdos y coopero</b><p>Participo en una solución justa y coopero.</p><div class="detalle">✨ Ejemplo: Acordamos turnarnos y respetarlo.</div></div>
+<div class="paso" onclick="mostrar(this)"><b>07. Actúo con respeto y construyo paz</b><p>Cumplo los acuerdos y contribuyo a una convivencia sana.</p><div class="detalle">✨ Ejemplo: Cumplo lo que prometí.</div></div>
+<div class="tarjeta"><h3>🔁 Mi secuencia</h3><p style="text-align:center;font-weight:bold">Programar → Pensar → Dialogar → Respetar → Cooperar → Construir paz</p></div>
+<div class="tarjeta" onclick="abrirAlgoritmo()" style="cursor:pointer;">
+  <h2>🧭 Algoritmo de paz - Dale click aquí</h2>
+  <p>Del conflicto a una solución pacífica.</p>
+</div>
+
+<div id="algoritmo" style="display:none;">
+
+  <div class="tarjeta">
+    <img src="nayeruta.jpeg" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+   <p>1.Mi ruta de paz para la solucion del trabajo en equipo no funcional.</p>
+  </div>
+
+  <div class="tarjeta"> 
+    <img src="karolruta.jpeg" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+   <p>2.Mi ruta de paz para la prevencion de burlas y agresiones.</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="zulyruta.jpeg" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+   <p>3.MI ruta de paz para prevenir los conflictos a discusion</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="yolaruta.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+   <p>4.Mi ruta de paz para prevenir el acoso o bullyng escolar.</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="lizruta.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+    <p>Mi ruta de paz para respetar las opiniones de los demas sin interrumpir.</p>
+  </div>
+
+  <div class="tarjeta">
+    <img src="eliruta.jpeg" style="width:100%; height:180px; object-fit:cover; border-radius:12px;">
+    <p>Mi ruta de paz para ayudar a estudiantes con dificultades de expresion.</p>
+  </div>
+
+</div>
+<div class="paso" onclick="mostrar(this)"><b>¿Hay un conflicto?</b><div class="detalle">Sí → Pensar las cosas antes de actuar.</div></div><div class="flecha">↓</div>
+<div class="paso" onclick="mostrar(this)"><b>¿Puedo hablarlo con calma?</b><div class="detalle">Sí → Dialogo y escucho. → Pido ayuda a un adulto o docente.</div></div><div class="flecha">↓</div>
+<div class="paso" onclick="mostrar(this)"><b>¿Llegamos a un acuerdo?</b><div class="detalle">Sí → Lo cumplimos y construimos paz. No → Buscamos otra solución juntos.</div></div><div class="flecha">↓</div>
+<div class="paso" onclick="mostrar(this)"><b>✅ Solución pacífica</b><div class="detalle">Respeto, diálogo y bienestar integral.</div></div>
+
+<button class="btn" onclick="cambiar('cierre')">Ir a Cierre →</button>
+</div>
+
+<!-- 3 CIERRE -->
+<div id="cierre" class="pantalla">
+<h2>3. Cierre</h2><div class="subtitulo">"Mi compromiso con la paz"</div>
+<div class="tarjeta"><h3>💬 Mensaje final</h3><p><b>"La paz no es solamente la ausencia de conflictos; es aprender a resolver nuestras diferencias con respeto, diálogo, empatía y solidaridad."</b><br><br>Te invito a ser un <b>agente que "programa" acciones</b> para construir ambientes de respeto, diálogo y bienestar integral.</p></div>
+<div class="tarjeta"><h3>Muro de compromisos</h3><p style="text-align:center">Compromisos para construir una comunidad basada en el respeto y la paz.</p></div>
+<div class="muro"><p>"Escucharé a los demás antes de juzgarlos."</p><span>Compromiso por la empatía</span></div>
+<div class="muro"><p>"Resolveré mis diferencias mediante el diálogo."</p><span>Compromiso por el diálogo</span></div>
+<div class="muro"><p>"Respetaré las diferencias de mis compañeros."</p><span>Compromiso por el respeto</span></div>
+<div class="muro"><p>"Evitaré las burlas y cualquier forma de discriminación."</p><span>Compromiso contra la violencia</span></div>
+<div class="muro"><p>"Ayudaré a quien necesite apoyo."</p><span>Compromiso por la solidaridad</span></div>
+<div class="muro"><p>"Contribuiré a mantener un ambiente de paz."</p><span>Compromiso por la paz</span></div>
+<div class="tarjeta"><h3>📱 Muro colectivo</h3><p style="text-align:center">Escanea para dejar tu compromiso o ver el video de reflexión.</p><div class="qr-box"><img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&margin=10&data=https://youtu.be/d61Iz2kppWY?si=BJWCVJO6vHTrbk_1" alt="Código QR video de reflexión"><a href="https://youtu.be/d61Iz2kppWY?si=BJWCVJO6vHTrbk_1" target="_blank">▶ Ver video de reflexión</a><br><a class="secundario" href="https://canva.link/lys7a4dq4tirtlc" target="_blank">Ver en Canva</a></div></div
+<div class="aviso">💛 <b>Aviso:</b> Si tú o alguien lo necesita, acude a Orientación / Tutorías, a un familiar de confianza o a un profesional de la salud. No estás solo/a.</div>
+<button class="btn" onclick="cambiar('inicio')">↑ Volver a Inicio</button>
+</div>
+
+<!-- RECURSOS -->
+<div id="recursos" class="pantalla">
+<h2>Recursos</h2><div class="subtitulo">Fuentes consultadas</div>
+<div class="tarjeta"><p><b>1. UNESCO.</b> Cultura de paz.<br><br><b>2. UNICEF.</b> Convivencia escolar y prevención de la violencia.<br><br><b>3. SEP.</b> El ABC de las emociones.<br><br><b>4. Concepto.de</b> - Convivencia.<br><br><b>5. Movimiento por la Paz</b> - Cultura de paz.</p></div>
+<div class="aviso">Lenguaje respetuoso y juvenil. Sin etiquetas. No nombro ni señalo a compañeros.</div>
+</div>
+
+<footer>PAEC - Cultura de la Paz - CECyTE 24<br>Construyendo rutas para una convivencia sana.</footer>
+
+<!-- BOTONES AL ULTIMO - ABAJO -->
+<div class="menu">
+<button id="btn-inicio" class="activo" onclick="cambiar('inicio')">🏠 Inicio</button>
+<button id="btn-apertura" onclick="cambiar('apertura')">📖 1. Apertura</button>
+<button id="btn-desarrollo" onclick="cambiar('desarrollo')">🧩 2. Desarrollo</button>
+<button id="btn-cierre" onclick="cambiar('cierre')">✅ 3. Cierre</button>
+<button id="btn-recursos" onclick="cambiar('recursos')">📚 Recursos</button>
+</div>
+
+<script>
+function cambiar(id){
+document.querySelectorAll(".pantalla").forEach(p=>p.classList.remove("activa"));
+document.getElementById(id).classList.add("activa");
+document.querySelectorAll(".menu button").forEach(b=>b.classList.remove("activo"));
+document.getElementById("btn-"+id).classList.add("activo");
+window.scrollTo({top:0,behavior:"smooth"});
+}
+function mostrar(e){let d=e.querySelector(".detalle");d.style.display=(d.style.display==="block")?"none":"block";}
+ function abrirAlgoritmo(){
+  var caja = document.getElementById("algoritmo");
+  if(caja.style.display=="none"){
+    caja.style.display="block";
+  } else {
+    caja.style.display="none";
+  }
+}
+function abrirAlgo(){
+  abrirAlgoritmo();
+}
+</script>
+</body>
+</html>
